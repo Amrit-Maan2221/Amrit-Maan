@@ -47,10 +47,10 @@ function Navbar() {
                     <div className='navbar_smallScreenMenu'>
                         <GiHamburgerMenu className="navbar_smallScreen_openClose_icon" color="#FFF" onClick={() => openCloseMenu()} />
                         <ul className='navbar_smallScreen_links'>
-                            <li><Link onClick={() => openCloseMenu()} to="/#projects">Projects</Link></li>
+                            <li><a onClick={() => openCloseMenu()} href="/#projects">Projects</a></li>
                             {/* <li><Link onClick={() => openCloseMenu()} to="/blogs">Blogs</Link></li> */}
-                            <li><Link onClick={() => openCloseMenu()} to="/#Tech">Technologies</Link></li>
-                            <li><Link onClick={() => openCloseMenu()} to="/#about">About</Link></li>
+                            <li><a onClick={() => openCloseMenu()} href="/#Tech">Technologies</a></li>
+                            <li><a onClick={() => openCloseMenu()} href="/#about">About</a></li>
                         </ul>
                     </div>
                 )}
