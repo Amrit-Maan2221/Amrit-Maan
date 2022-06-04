@@ -1,0 +1,28 @@
+.utility_list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  margin: 2.5rem 0;
+}
+
+.utility_list a {
+  color: #ffffff;
+  font-size: 1.6rem;
+  padding: 1rem 1.5rem;
+  background: #474747;
+  border-radius: 15px;
+  transition: 0.5s;
+}
+
+.utility_list a:hover {
+  background: #000;
+}
+
+@media screen and (max-width: 650px) {
+  .utility_list a {
+    font-size: 1.2rem;
+    padding: 0.7rem 1rem;
+    border-radius: 12px;
+  }
+}

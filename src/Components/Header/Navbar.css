@@ -1,0 +1,136 @@
+.navbar_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.navbar_logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: black;
+}
+
+.navbar_logo_icon {
+  width: 3rem;
+  height: 3rem;
+}
+
+.navbar_logo span {
+  font-size: 2rem;
+}
+
+.navbar_links {
+  flex-grow: 1;
+  flex-shrink: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.navbar_links li {
+  margin: 0 1rem;
+}
+
+.navbar_links a {
+  transition: 0.4s ease;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.753);
+}
+
+.navbar_links a:hover {
+  cursor: pointer;
+  color: #000;
+}
+
+.navbar_socialLinks {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navbar_socialIcons {
+  height: 2rem;
+  width: 2rem;
+}
+
+.navbar_socialLinks a {
+  transition: 0.3s ease;
+  border-radius: 50px;
+  padding: 8px;
+}
+
+.navbar_socialLinks a:hover {
+  background-color: rgba(161, 171, 192, 0.247);
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.navbar_smallScreen {
+  display: none;
+}
+
+.navbar_smallScreenMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  transition: 0.5s ease;
+  flex-direction: column;
+  z-index: 5;
+  background-color: #000;
+}
+
+.navbar_smallScreen_openClose_icon {
+  font-size: 27px;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.navbar_smallScreen_links {
+  list-style: none;
+}
+
+.navbar_smallScreen_links li {
+  margin: 2rem;
+  cursor: pointer;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.navbar_smallScreen_links a {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.navbar_smallScreen_links a:hover {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 2000px) {
+}
+
+@media screen and (max-width: 1150px) {
+  .navbar_links,
+  .navbar_socialLinks {
+    display: none;
+  }
+  .navbar_smallScreen {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .navbar_container {
+    padding: 1rem;
+  }
+}
